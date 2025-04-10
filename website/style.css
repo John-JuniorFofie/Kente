@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.first{
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.507)),url(/pics/album/kente\ background.jpg);
+    height:80vh;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.185);
+    align-items: center;
+    height: 10vh;
+    padding: 20px 20px;
+}
+.logo img{
+    height:20px;
+}
+.nav ul {
+    display: flex;
+    gap: 30px;
+}
+.nav ul li{
+    margin-right: 30px;
+}
+.nav ul li a{
+    font-family: arial;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.nav ul li button{
+    background-color: rgb(1, 41, 1);
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    height: 5vh;
+    
+
+}
+.nav ul li button a{
+    font-size: 15px;
+}
+.text{
+    text-align: center;
+    color:white;
+    margin-top: 100px;
+}
+.text h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .text h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    animation: fadeSlideUp 1s ease-out forwards;
+  }
+.text p{
+    font-size: 30px;
+}
+.second{
+margin-top: 50px;
+}
+.second h3{
+    font-family:arial;
+    text-align:center;
+}
+.page{
+    display:flex;
+}
+.page img{
+    height: 80vh;
+    width:35vw;
+    b
+
+}
+.page p{
+    font-family: arial;
+    /* position:relative; */
+    margin:50px;
+    
+}
+
+.about{
+    height: 40vh;
+    width: 70vw;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.74);
+    margin-left: 200px;
+}
+.about p{
+    text-align:center;
+    font-family:arial;
+    font-size:20px;
+    /* align-content:center; */
+    padding:40px;
+}
+.guys{
+    margin-top: 50px;
+}
+.guys p{
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-left: 120px; */
+   
+    margin-top: 100px;
+}
+/* .pics{
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 20px;
+} */
+.pics{
+    box-shadow: 2px 2px 2px 2px gray;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    align-items: center;
+    border-radius: 20PX;
+}
+.pics img{
+    border-radius: 20px;
+    width: 25vw;
+    height: 40vh;
+    margin-top:20px;
+}
+.pics p{
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+    color:rgb(1, 41, 1);
+}
+
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.575)),url(/pics/KenteCloth.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 20vh;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    display: flex;
+
+}
+.left{
+    display:flex;
+    flex-direction:column;
+    gap:80px;
+}
+.left img{
+    position: relative;
+    top:40px;
+}
+.copy{
+    color:white;
+    font-family: arial;
+    
+}
+.middle{
+    align-items: center;
+    
+    /* text-align: center; */
+}
+.middle h5{
+    color:white;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 20px; 
+}   
+
+.middle a{
+    color:white;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 20px;
+}
+.middle a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .middle a:hover::after {
+    width: 100%;
+  }
+
+.social img{
+    height:30px;
+}
+.soc{
+    display:flex;
+}
+.social h5{
+    color:white;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 20px;   
+}
+.soc p{
+    position: relative;
+    top:5px;
+    color:white;
+    left: 5px;
+    font-family: arial;
+}
+@media (max-width: 768px) {
+    .first {
+      height: 70vh;
+      background-position: center;
+    }
+  
+    header {
+      flex-direction: column;
+      height: auto;
+      gap: 15px;
+      padding: 10px 15px;
+    }
+  
+    .logo img {
+      height: 25px;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .nav ul li a {
+      font-size: 16px;
+    }
+  
+    .nav ul li button {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    .text {
+      margin-top: 60px;
+      padding: 0 20px;
+    }
+  
+    .text h1 {
+      font-size: 30px;
+    }
+  
+    .text p {
+      font-size: 18px;
+    }
+  
+    .page {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .page img {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .page p {
+      margin: 20px 0;
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .about {
+      width: 90vw;
+      margin: 30px auto;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .about p {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 50px;
+    }
+  
+    .pics {
+      width: 80vw;
+      height: auto;
+    }
+  
+    .pics img {
+      width: 90%;
+      height: auto;
+      margin-top: 15px;
+    }
+  
+    .pics p {
+      font-size: 16px;
+    }
+  
+    footer {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+      gap: 30px;
+      text-align: center;
+    }
+  
+    .left {
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .left img {
+      position: static;
+      height: 30px;
+    }
+  
+    .middle a,
+    .middle h5,
+    .soc p,
+    .social h5 {
+      font-size: 14px;
+    }
+  
+    .soc {
+      justify-content: center;
+    }
+  
+    .social img {
+      height: 25px;
+    }
+  }@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 0;
+    }
+
+    .nav ul li a {
+        font-size: 16px;
+    }
+
+    .nav ul li button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .about {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .pics img, .picss img {
+        width: 80vw;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .left {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left img {
+        top: 0;
+    }
+
+    .middle h5, .middle a, .soc p, .social h5 {
+        font-size: 16px;
+    }
+
+    .soc {
+        justify-content: center;
+    }
+
+    .social img {
+        height: 25px;
+    }
+}

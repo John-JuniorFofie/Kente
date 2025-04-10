@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.first{
+    background: linear-gradient(rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.842),rgba(0, 0, 0, 0.726)),url(/pics/tourist-carrying-luggage.jpg);
+    height:80vh;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.185);
+    align-items: center;
+    height: 10vh;
+    padding: 20px 20px;
+}
+.logo img{
+    height:20px;
+}
+.nav ul {
+    display: flex;
+    gap: 30px;
+}
+.nav ul li{
+    margin-right: 30px;
+}
+.nav ul li a{
+    font-family: arial;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.nav ul li button{
+    background-color:darkred;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    height: 5vh;
+    
+
+}
+.nav ul li button a{
+    font-size: 15px;
+}
+.text{
+    text-align: center;
+    color:white;
+    margin-top: 150px;
+}
+.text h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .detail{
+    margin-top:50px;
+  }
+  .text h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    animation: fadeSlideUp 1s ease-out forwards;
+  }
+  
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.them{
+    box-shadow: 2px 2px 2px 2px gray;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 45vh;
+    align-items: center;
+    border-radius: 20PX;
+
+}
+.them:hover{
+    transform:scale(1.1);
+    transition-duration:1s;
+    
+}
+.them img{
+    height:35vh;
+    width: 20vw;
+    border-radius: 20px;
+    margin: 40px;
+    bottom: 20px;
+    position: relative;
+}
+.them button{
+    background-color:darkred;
+    color:white;
+    border-radius: none;
+    border:none;
+    width:9vw;
+    height: 7vh;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 100px; 
+    bottom: 30px; 
+    }
+    .them button a{
+        color:white;
+        text-decoration: none;
+    }
+    .detail h1{
+        color:darkred;
+        text-align: center;
+        font-family: arial;
+        font-weight: bold;
+       
+    }
+    
+    .abakosem{
+        width:90vw;
+        box-shadow:2px 2px 2px 2px;
+        border-radius:20px;
+        height:50vh;
+        text-align:center;
+        margin-left:50px;
+    }
+    .abakosem p{
+        font-size:20px;
+        font-family:arial;
+        padding:50px;
+    }
+    .guides{
+        margin-top: 40px;
+    }
+    .places{
+        margin:30px;
+    }
+    footer{
+        background: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.692),rgba(0, 0, 0, 0.575)),url(/pics/KenteCloth.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        height: 20vh;
+        margin-top: 50px;
+        justify-content: space-evenly;
+        display: flex;
+    
+    }
+    .left{
+        display:flex;
+        flex-direction:column;
+        gap:80px;
+    }
+    .left img{
+        position: relative;
+        top:40px;
+    }
+    .copy{
+        color:white;
+        font-family: arial;
+        
+    }
+    .middle{
+        align-items: center;
+        
+        /* text-align: center; */
+    }
+    .middle h5{
+        color:white;
+        font-family: arial;
+        text-decoration: none;
+        font-size: 20px; 
+    }   
+    
+    .middle a{
+        color:white;
+        font-family: arial;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .social img{
+        height:30px;
+    }
+    .soc{
+        display:flex;
+    }
+    .social h5{
+        color:white;
+        font-family: arial;
+        text-decoration: none;
+        font-size: 20px;   
+    }
+    .soc p{
+        position: relative;
+        top:5px;
+        color:white;
+        left: 5px;
+        font-family: arial;
+    }
+    @media screen and (max-width: 768px) {
+        header {
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+      
+        .nav ul {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+      
+        .nav ul li {
+          margin-right: 0;
+        }
+      
+        .text {
+          margin-top: 80px;
+          padding: 0 10px;
+        }
+      
+        .text h1 {
+          font-size: 30px;
+        }
+      
+        .text p {
+          font-size: 18px;
+        }
+      
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .them {
+          width: 80vw;
+          height: auto;
+          margin-bottom: 30px;
+        }
+      
+        .them img {
+          width: 70vw;
+          height: auto;
+          margin: 20px 0;
+        }
+      
+        .them button {
+          width: 60vw;
+          margin: 10px auto;
+          bottom: 0;
+        }
+      
+        .abakosem {
+          width: 90vw;
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        .abakosem p {
+          font-size: 16px;
+          padding: 20px;
+        }
+      
+        .first {
+          height: 60vh;
+        }
+      
+        .greentxt {
+          width: 90vw;
+          margin: 20px auto;
+          height: auto;
+        }
+      
+        .greentxt p {
+          font-size: 18px;
+          padding: 30px;
+        }
+      
+        .kpics img, .Kpici img {
+          width: 50vw;
+          height: auto;
+          border-radius: 50%;
+        }
+      
+        footer {
+          flex-direction: column;
+          align-items: center;
+          height: auto;
+          padding: 20px;
+          gap: 20px;
+        }
+      
+        .left {
+          align-items: center;
+          gap: 20px;
+          padding-top: 20px;
+        }
+      
+        .middle h5,
+        .middle a,
+        .social h5,
+        .soc p {
+          font-size: 16px;
+          text-align: center;
+         
+        }
+      
+        .soc {
+          justify-content: center;
+        }
+      }
+    
+
