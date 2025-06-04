@@ -97,8 +97,9 @@ margin-top: 50px;
 }
 .page p{
     font-family: arial;
+    font-size:20px;
     /* position:relative; */
-    margin:50px;
+/*     margin:50px; */
     
 }
 
