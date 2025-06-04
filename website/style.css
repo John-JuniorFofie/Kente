@@ -87,6 +87,7 @@ margin-top: 50px;
 }
 .page{
     display:flex;
+    justify-content:center;
 }
 .page img{
     height: 80vh;
@@ -107,6 +108,7 @@ margin-top: 50px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.74);
     margin-left: 200px;
+    
 }
 .about p{
     text-align:center;
