@@ -88,7 +88,8 @@ margin-top: 50px;
 .page{
     display:flex;
     justify-content:center;
-    gap:50px;
+    gap:90px;
+    margin-top:50px;
 }
 .page img{
     height:400px;
@@ -98,7 +99,7 @@ margin-top: 50px;
 }
 .page p{
     font-family: arial;
-    font-size:15px;
+    font-size:13px;
     /* position:relative; */
 /*     margin:50px; */
     
